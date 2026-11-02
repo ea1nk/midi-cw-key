@@ -14,6 +14,8 @@ La placa se conecta al ordenador como un dispositivo MIDI estándar, sin drivers
 | Pala 2               | D3  | C#4 (61)  |
 | Manipulador vertical | D4  | D4 (62)   |
 
+![Diagrama de conexionado del Arduino Leonardo y los manipuladores](wiring.svg)
+
 Cada entrada va entre su pin y GND, sin componentes externos.
 
 Las instrucciones de montaje, compilación y flasheo están en [LEEME_MIDI_KEY.md](LEEME_MIDI_KEY.md).
@@ -29,6 +31,8 @@ The board connects to the computer as a standard MIDI device, with no drivers ne
 | Paddle 1     | D2  | C4 (60)   |
 | Paddle 2     | D3  | C#4 (61)  |
 | Straight key | D4  | D4 (62)   |
+
+![Wiring diagram for the Arduino Leonardo and telegraph keys](wiring.svg)
 
 Each input is wired between its pin and GND, with no external components.
 

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" role="img" aria-labelledby="title description">
+  <title id="title">Conexionado / Wiring · MIDI-PADDLE</title>
+  <desc id="description">Diagrama bilingüe de un Arduino Leonardo conectado por USB. Las entradas de las palas 1 y 2 van a D2 y D3; la entrada del manipulador vertical va a D4. Todos los contactos se conectan también a GND. Bilingual Arduino Leonardo wiring diagram: paddle inputs connect to D2 and D3, straight key input to D4, and all contacts to GND.</desc>
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; fill: #172033; }
+      .muted { fill: #526078; }
+      .wire { fill: none; stroke: #1769aa; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .ground { fill: none; stroke: #596579; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .pin { fill: #fff; stroke: #1769aa; stroke-width: 3; }
+      .contact { fill: #fff; stroke: #172033; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="1250" height="640" rx="22" fill="#f4f7fb"/>
+  <text x="42" y="58" font-size="27" font-weight="700">MIDI-PADDLE · Conexionado / Wiring</text>
+  <text x="43" y="88" class="muted" font-size="15">Arduino Leonardo · entradas a GND / inputs to GND</text>
+
+  <!-- Arduino Leonardo board -->
+  <path d="M92 130 H347 L400 183 V484 L364 520 H92 Q70 520 70 498 V152 Q70 130 92 130Z" fill="#168a83" stroke="#126d68" stroke-width="4"/>
+  <circle cx="95" cy="155" r="10" fill="#f4f7fb" stroke="#126d68" stroke-width="3"/>
+  <circle cx="367" cy="183" r="10" fill="#f4f7fb" stroke="#126d68" stroke-width="3"/>
+  <circle cx="95" cy="494" r="10" fill="#f4f7fb" stroke="#126d68" stroke-width="3"/>
+  <circle cx="359" cy="484" r="10" fill="#f4f7fb" stroke="#126d68" stroke-width="3"/>
+
+  <!-- USB and power connectors -->
+  <rect x="79" y="190" width="61" height="51" rx="8" fill="#b9c3cf" stroke="#526078" stroke-width="3"/>
+  <rect x="86" y="198" width="47" height="35" rx="5" fill="#e7edf3" stroke="#758197" stroke-width="2"/>
+  <rect x="76" y="273" width="50" height="58" rx="12" fill="#263349" stroke="#172033" stroke-width="3"/>
+  <rect x="83" y="280" width="36" height="44" rx="8" fill="#526078"/>
+
+  <!-- Board components and silkscreen -->
+  <text x="238" y="174" text-anchor="middle" font-size="21" font-weight="800" fill="#fff">LEONARDO</text>
+  <rect x="159" y="254" width="151" height="77" rx="5" fill="#263349" stroke="#0f1724" stroke-width="3"/>
+  <text x="234" y="286" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">ATmega32U4</text>
+  <text x="234" y="309" text-anchor="middle" font-size="12" fill="#d5deea">USB · MIDI</text>
+  <rect x="165" y="358" width="67" height="42" rx="4" fill="#34435a" stroke="#172033" stroke-width="2"/>
+  <text x="198" y="384" text-anchor="middle" font-size="11" fill="#fff">16 MHz</text>
+  <rect x="253" y="361" width="46" height="37" rx="4" fill="#34435a" stroke="#172033" stroke-width="2"/>
+  <circle cx="155" cy="437" r="8" fill="#e33d48" stroke="#8f1e2b" stroke-width="2"/>
+  <circle cx="183" cy="437" r="8" fill="#e2a72e" stroke="#8a641a" stroke-width="2"/>
+  <text x="212" y="443" font-size="12" fill="#fff">ON · TX · RX</text>
+
+  <!-- Digital header and connected pins -->
+  <rect x="374" y="227" width="20" height="251" rx="4" fill="#263349"/>
+  <text x="346" y="262" text-anchor="end" font-size="14" font-weight="700" fill="#fff">D2</text>
+  <text x="346" y="332" text-anchor="end" font-size="14" font-weight="700" fill="#fff">D3</text>
+  <text x="346" y="402" text-anchor="end" font-size="14" font-weight="700" fill="#fff">D4</text>
+  <text x="346" y="466" text-anchor="end" font-size="12" font-weight="700" fill="#fff">GND</text>
+
+  <circle cx="390" cy="256" r="7" class="pin"/>
+  <circle cx="390" cy="326" r="7" class="pin"/>
+  <circle cx="390" cy="396" r="7" class="pin"/>
+  <circle cx="390" cy="460" r="7" fill="#fff" stroke="#596579" stroke-width="3"/>
+
+  <!-- Signal wiring -->
+  <path class="wire" d="M397 256 H565"/>
+  <path class="wire" d="M397 326 H565"/>
+  <path class="wire" d="M397 396 H565"/>
+
+  <!-- Normally open contacts -->
+  <circle cx="565" cy="256" r="5" class="contact"/>
+  <circle cx="625" cy="256" r="5" class="contact"/>
+  <line x1="570" y1="256" x2="610" y2="239" stroke="#172033" stroke-width="4" stroke-linecap="round"/>
+
+  <circle cx="565" cy="326" r="5" class="contact"/>
+  <circle cx="625" cy="326" r="5" class="contact"/>
+  <line x1="570" y1="326" x2="610" y2="309" stroke="#172033" stroke-width="4" stroke-linecap="round"/>
+
+  <circle cx="565" cy="396" r="5" class="contact"/>
+  <circle cx="625" cy="396" r="5" class="contact"/>
+  <line x1="570" y1="396" x2="610" y2="379" stroke="#172033" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Shared ground wiring -->
+  <path class="ground" d="M397 460 H470 V535 H645"/>
+  <path class="ground" d="M625 256 H645 V535"/>
+  <path class="ground" d="M625 326 H645"/>
+  <path class="ground" d="M625 396 H645"/>
+  <path class="ground" d="M645 535 H730"/>
+
+  <!-- Manipulator labels -->
+  <rect x="665" y="211" width="285" height="34" rx="8" fill="#e7f1fb"/>
+  <text x="680" y="234" font-size="15" font-weight="650">Pala 1 / Paddle 1 · D2</text>
+  <rect x="665" y="281" width="285" height="34" rx="8" fill="#e7f1fb"/>
+  <text x="680" y="304" font-size="15" font-weight="650">Pala 2 / Paddle 2 · D3</text>
+  <rect x="665" y="351" width="320" height="34" rx="8" fill="#e7f1fb"/>
+  <text x="680" y="374" font-size="14" font-weight="650">Manipulador vertical / Straight key · D4</text>
+
+  <circle cx="730" cy="535" r="6" fill="#596579"/>
+  <text x="744" y="541" class="muted" font-size="16">GND común</text>
+
+  <!-- USB connection -->
+  <path d="M79 215 H48 V572 H42" fill="none" stroke="#168a83" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="42" y="548" width="270" height="48" rx="10" fill="#e0f2ef"/>
+  <text x="177" y="578" text-anchor="middle" font-size="15" font-weight="650">USB al ordenador / to computer · MIDI</text>
+
+  <text x="42" y="624" class="muted" font-size="13">Al pulsar, cada contacto cierra a GND / Pressing a key connects its input to GND · INPUT_PULLUP, sin resistencias externas / no external resistors</text>
+</svg>
